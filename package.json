@@ -62,9 +62,6 @@
     "minimatch": "3.1.2"
   },
   "lint-staged": {
-    "*.{ts,js,vue}": [
-      "eslint --fix",
-      "git add"
-    ]
+    "*.{ts,js,vue}": ["eslint --fix"]
   }
 }
