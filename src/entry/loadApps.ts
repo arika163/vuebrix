@@ -11,7 +11,7 @@ function loadApp(app: App) {
 
 if (process.env.NODE_ENV === 'production') {
   apps.forEach((appName: string) => {
-    window.System.import(`./child/${appName}/main.js`).then((module: any) => {
+    System.import(`./child/${appName}/main.js`).then(module => {
       loadApp(module.default.default)
     })
   })
